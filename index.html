@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>REENCUENTRA</title>
+    <!-- Tipo de letra Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- MENÚ -->
+    <header>
+      <a class="logo" href="#inicio">
+        <img src="imagenes/logo.png" alt="Logo REENCUENTRA" />
+        <span>REENCUENTRA</span>
+      </a>
+
+      <!-- Botón hamburguesa  -->
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="burger">☰</label>
+
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#descripcion">Descripción</a>
+        <a href="#prototipo">Prototipo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!--  INICIO  -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <p class="etiquetas">ENCUENTRA . RECUERDA . VISITA</p>
+        <h1>
+          Encuentra el lugar.
+          <span>Conserva el recuerdo</span>
+        </h1>
+        <p>
+          Ubica fácilmente a tu ser querido dentro del cementerio y realiza una
+          visita más tranquila, sin perder tiempo.
+        </p>
+      </div>
+      <img
+        class="hero-imagen"
+        src="imagenes/hero.png"
+        alt="imag1"
+      />
+    </section>
+
+    <!--  DESCRIPCIÓN  -->
+    <section id="descripcion">
+      <!-- Tarjetas -->
+      <div class="fondo-verde">
+        <div class="contenedor tarjetas">
+          <div class="tarjeta">
+            <img src="imagenes/f-busqueda.png" alt="Búsqueda" />
+            <div>
+              <h3>Búsqueda rápida</h3>
+              <p>Encuentra al ser querido por su nombre y apellidos.</p>
+            </div>
+          </div>
+
+          <div class="tarjeta">
+            <img src="imagenes/f-ubicacion.png" alt="Ubicación" />
+            <div>
+              <h3>Ubicación y ruta</h3>
+              <p>Visualiza pabellón, fila, número y la ruta hasta el nicho.</p>
+            </div>
+          </div>
+
+          <div class="tarjeta">
+            <img src="imagenes/f-solicitudes.png" alt="Solicitudes" />
+            <div>
+              <h3>Solicitudes</h3>
+              <p>Reporta necesidades de limpieza o mantenimiento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasos -->
+      <div class="contenedor como-funciona">
+        <h2>¿Cómo funciona?</h2>
+        <div class="pasos">
+          <div class="paso">
+            <span class="numero">1</span>
+            <img src="imagenes/qr.png" alt="Código QR" />
+            <div>
+              <h3>Escanea el QR</h3>
+              <p>Accede desde la entrada o puntos estratégicos del cementerio.</p>
+            </div>
+          </div>
+
+          <div class="paso">
+            <span class="numero">2</span>
+            <img src="imagenes/buscar.png" alt="Lupa" />
+            <div>
+              <h3>Busca el nombre</h3>
+              <p>Consulta la información registrada por la administración.</p>
+            </div>
+          </div>
+
+          <div class="paso">
+            <span class="numero">3</span>
+            <img src="imagenes/mapa.png" alt="Mapa" />
+            <div>
+              <h3>Llega al nicho</h3>
+              <p>Sigue la ubicación y la ruta indicada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROTOTIPO -->
+    <section id="prototipo" class="fondo-verde prototipo">
+      <div class="prototipo-caja">
+        <div class="prototipo-texto">
+          <h2>¡Prueba el prototipo!</h2>
+          <p>
+            Explora REENCUENTRA y descubre cómo buscar a tu ser querido,
+            encontrar su ubicación y realizar solicitudes de manera fácil y
+            rápida.
+          </p>
+        </div>
+        <!-- El prototipo iframe -->
+        <iframe src="prototipo/indexprototipo.html" title="Prototipo REENCUENTRA"></iframe>
+      </div>
+    </section>
+
+    <!-- ========== EQUIPO ========== -->
+    <section class="contenedor equipo">
+      <h2>Equipo de desarrollo</h2>
+      <div class="integrantes">
+        <div class="integrante">
+          <img src="imagenes/avatar.png" alt="Avatar" />
+          <p>Kira Curisinche</p>
+        </div>
+        <div class="integrante">
+          <img src="imagenes/avatar.png" alt="Avatar" />
+          <p>Patty Tembladera</p>
+        </div>
+        <div class="integrante">
+          <img src="imagenes/avatar.png" alt="Avatar" />
+          <p>Nicole Canales</p>
+        </div>
+        <div class="integrante">
+          <img src="imagenes/avatar.png" alt="Avatar" />
+          <p>Estephanie Huaman</p>
+        </div>
+        <div class="integrante">
+          <img src="imagenes/avatar.png" alt="Avatar" />
+          <p>Diana Cristobal</p>
+        </div>
+        <div class="integrante">
+          <img src="imagenes/avatar.png" alt="Avatar" />
+          <p>Aracely Villegas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <footer id="contacto">
+      <p>
+        Proyecto académico desarrollado para la presentación del MVP de
+        REENCUENTRA, una aplicación móvil que facilita la localización de seres
+        queridos en cementerios y la gestión de solicitudes de mantenimiento.
+      </p>
+      <p>© 2026 REENCUENTRA. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

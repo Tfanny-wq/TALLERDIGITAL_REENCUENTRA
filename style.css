@@ -1,0 +1,399 @@
+/* GENERAL  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto; 
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #111;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Caja */
+.contenedor {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Fondo verde claro que se repite en varias secciones */
+.fondo-verde {
+  background: #e6efe3;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* ===== MENÚ ===== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  background: #cbdcc6;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #2d4a22;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  height: 100%;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.activo {
+  background: #475942;
+  color: white;
+}
+
+/* hamburguesa  */
+#toggle,
+.burger {
+  display: none;
+}
+
+/* INICIO */
+.hero {
+  display: flex;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+}
+
+.hero-texto {
+  width: 40%;
+  padding: 40px 20px 40px 80px;
+  animation: aparecer 1.2s; 
+}
+
+.etiquetas {
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #608659;
+  display: inline-block;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  color: #2d4a22;
+  margin-bottom: 30px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #608659;
+}
+
+.hero-imagen {
+  width: 60%;
+}
+
+/* Animación: de invisible a visible */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== TARJETAS ===== */
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.tarjeta {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #f5fff2;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px); 
+}
+
+.tarjeta img {
+  width: 64px;
+}
+
+.tarjeta h3 {
+  font-size: 15px;
+}
+
+.tarjeta p {
+  font-size: 13px;
+}
+
+/*  ¿CÓMO FUNCIONA? */
+.como-funciona {
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+
+.como-funciona h2 {
+  border-bottom: 3px solid #588c76;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.pasos {
+  display: flex;
+  gap: 25px;
+}
+
+.paso {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 20px;
+  background: #e6efe3;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.paso:hover {
+  transform: translateY(-6px);
+}
+
+.paso img {
+  width: 44px;
+}
+
+.paso h3 {
+  font-size: 15px;
+}
+
+.paso p {
+  font-size: 13px;
+}
+
+/* Círculo con el número del paso */
+.numero {
+  position: absolute;
+  top: -14px;
+  left: -10px;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background: #588c76;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/*  PROTOTIPO  */
+.prototipo {
+  padding: 60px 20px;
+}
+
+.prototipo-caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prototipo-texto {
+  width: 520px;
+  padding: 60px 150px 60px 60px;
+  margin-right: -120px; 
+  background: #588c76;
+  color: white;
+  border-radius: 40px 0 0 40px;
+}
+
+.prototipo-texto h2 {
+  margin-bottom: 15px;
+}
+
+.prototipo-texto p {
+  font-size: 14px;
+}
+
+/* El iframe */
+iframe {
+  width: 290px;
+  height: 531px;
+  border: 0;
+}
+
+/*  EQUIPO  */
+.equipo {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.equipo h2 {
+  border-bottom: 3px solid #588c76;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.integrantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.integrante {
+  width: 150px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.integrante img {
+  width: 80px;
+  transition: 0.3s;
+}
+
+.integrante img:hover {
+  transform: scale(1.15); 
+}
+
+/*  PIE DE PÁGINA  */
+footer {
+  background: #475942;
+  color: #e6efe3;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 13px;
+}
+
+footer p {
+  max-width: 750px;
+  margin: 0 auto 12px;
+}
+
+@media (max-width: 800px) {
+  /* Menú hamburguesa */
+  .burger {
+    display: block;
+    font-size: 28px;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: center;
+    background: #cbdcc6;
+  }
+
+  nav a {
+    padding: 16px 20px;
+  }
+
+  #toggle:checked ~ nav {
+    display: flex;
+  }
+
+  /* Inicio: texto arriba e imagen abajo */
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-texto {
+    width: 100%;
+    padding: 35px 20px 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-imagen {
+    width: 100%;
+  }
+
+
+  .tarjetas,
+  .pasos {
+    flex-direction: column;
+  }
+
+  .pasos {
+    gap: 30px;
+  }
+
+  /* Prototipo: texto arriba y celular abajo */
+  .prototipo-caja {
+    flex-direction: column;
+  }
+
+  .prototipo-texto {
+    width: 100%;
+    margin: 0 0 -60px 0;
+    padding: 40px 25px 90px;
+    border-radius: 40px 40px 0 0;
+  }
+
+  iframe {
+    width: 260px;
+    height: 500px;
+  }
+
+  .integrante {
+    width: 140px;
+  }
+}

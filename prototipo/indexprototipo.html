@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REENCUENTRA | Taller</title>
+    <link rel="stylesheet" href="styleprototipo.css">
+</head>
+<body>
+
+<main class="contenedor">
+
+    <!-- PANTALLA 1: BIENVENIDA -->
+    <section class="pantalla" id="inicio">
+        <span id="ver-inicio" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 1.png" alt="Bienvenida">
+            <a class="enlace-continuar" href="#ver-pantalla-2" aria-label="Continuar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 2: CEMENTERIOS -->
+    <section class="pantalla" id="pantalla-2">
+        <span id="ver-pantalla-2" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 2.png" alt="Cementerios">
+            <a class="enlace-volver-al-inicio" href="#ver-inicio" aria-label="Volver al inicio"></a>
+            <a class="enlace-seleccionar-jardines-de-la-paz" href="#ver-pantalla-3" aria-label="Seleccionar Jardines de la Paz"></a>
+            <a class="enlace-seleccionar-cementerio-britanico" href="#ver-pantalla-3" aria-label="Seleccionar Cementerio Británico"></a>
+            <a class="enlace-seleccionar-cementerio-el-angel" href="#ver-pantalla-3" aria-label="Seleccionar Cementerio El Ángel"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 3: CEMENTERIO SELECCIONADO -->
+    <section class="pantalla" id="pantalla-3">
+        <span id="ver-pantalla-3" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 3.png" alt="Cementerio seleccionado">
+            <a class="enlace-volver-a-cementerios" href="#ver-pantalla-2" aria-label="Volver a cementerios"></a>
+            <a class="enlace-siguiente" href="#ver-pantalla-4" aria-label="Siguiente"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 4: TIPO DE ACCESO -->
+    <section class="pantalla" id="pantalla-4">
+        <span id="ver-pantalla-4" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 4.png" alt="Tipo de acceso">
+            <a class="enlace-volver-al-cementerio" href="#ver-pantalla-3" aria-label="Volver al cementerio"></a>
+            <a class="enlace-soy-familiar" href="#ver-pantalla-5" aria-label="Soy familiar"></a>
+            <a class="enlace-administracion" href="#ver-pantalla-26" aria-label="Administración"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 5: BUSCAR A MARÍA ROJAS GUZMÁN -->
+    <section class="pantalla" id="pantalla-5">
+        <span id="ver-pantalla-5" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 5.png" alt="Buscar a María Rojas Guzmán">
+            <a class="enlace-volver" href="#ver-pantalla-4" aria-label="Volver"></a>
+            <a class="enlace-buscar" href="#ver-pantalla-6" aria-label="Buscar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 6: SIN RESULTADOS -->
+    <section class="pantalla" id="pantalla-6">
+        <span id="ver-pantalla-6" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 6.png" alt="Sin resultados">
+            <a class="enlace-volver" href="#ver-pantalla-5" aria-label="Volver"></a>
+            <a class="enlace-volver-a-buscar" href="#ver-pantalla-7" aria-label="Volver a buscar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 7: BUSCAR A JUAN PÉREZ GARCÍA -->
+    <section class="pantalla" id="pantalla-7">
+        <span id="ver-pantalla-7" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 7.png" alt="Buscar a Juan Pérez García">
+            <a class="enlace-volver" href="#ver-pantalla-4" aria-label="Volver"></a>
+            <a class="enlace-buscar" href="#ver-pantalla-8" aria-label="Buscar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 8: RESULTADOS DE BÚSQUEDA -->
+    <section class="pantalla" id="pantalla-8">
+        <span id="ver-pantalla-8" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 8.png" alt="Resultados de búsqueda">
+            <a class="enlace-volver-a-buscar" href="#ver-pantalla-7" aria-label="Volver a buscar"></a>
+            <a class="enlace-abrir-el-menu-principal-de-juan-perez-garcia" href="#ver-pantalla-10" aria-label="Abrir el menú principal de Juan Pérez García"></a>
+            <a class="enlace-no-se-encontro" href="#ver-pantalla-6" aria-label="No se encontró"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 9: FICHA DE JUAN PÉREZ GARCÍA -->
+    <section class="pantalla" id="pantalla-9">
+        <span id="ver-pantalla-9" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 9.png" alt="Ficha de Juan Pérez García">
+            <a class="enlace-volver-al-menu-principal" href="#ver-pantalla-10" aria-label="Volver al menú principal"></a>
+            <a class="enlace-ir-al-menu-principal" href="#ver-pantalla-10" aria-label="Ir al menú principal"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 10: MENÚ FAMILIAR -->
+    <section class="pantalla" id="pantalla-10">
+        <span id="ver-pantalla-10" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 10.png" alt="Menú familiar">
+            <a class="enlace-ver-ficha-de-juan-perez-garcia" href="#ver-pantalla-9" aria-label="Ver ficha de Juan Pérez García"></a>
+            <a class="enlace-volver-a-resultados" href="#ver-pantalla-8" aria-label="Volver a resultados"></a>
+            <a class="enlace-ubicacion" href="#ver-pantalla-11" aria-label="Ubicación"></a>
+            <a class="enlace-mural-de-memorias" href="#ver-pantalla-14" aria-label="Mural de memorias"></a>
+            <a class="enlace-solicitud-de-servicio" href="#ver-pantalla-19" aria-label="Solicitud de servicio"></a>
+            <a class="enlace-cerrar-sesion" href="#ver-pantalla-24" aria-label="Cerrar sesión"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 11: MAPA DEL NICHO -->
+    <section class="pantalla" id="pantalla-11">
+        <span id="ver-pantalla-11" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 11.png" alt="Mapa del nicho">
+            <a class="enlace-volver-al-menu" href="#ver-pantalla-10" aria-label="Volver al menú"></a>
+            <a class="enlace-datos-del-nicho" href="#ver-pantalla-13" aria-label="Datos del nicho"></a>
+            <a class="enlace-compartir-ubicacion" href="#ver-pantalla-12" aria-label="Compartir ubicación"></a>
+            <a class="enlace-ir-al-menu-principal" href="#ver-pantalla-10" aria-label="Ir al menú principal"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 12: COMPARTIR UBICACIÓN -->
+    <section class="pantalla" id="pantalla-12">
+        <span id="ver-pantalla-12" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 12.png" alt="Compartir ubicación">
+            <a class="enlace-cerrar-opciones-de-compartir" href="#ver-pantalla-11" aria-label="Cerrar opciones de compartir"></a>
+            <a class="enlace-volver-al-mapa" href="#ver-pantalla-11" aria-label="Volver al mapa"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 13: DATOS DEL NICHO -->
+    <section class="pantalla" id="pantalla-13">
+        <span id="ver-pantalla-13" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 13.png" alt="Datos del nicho">
+            <a class="enlace-volver-al-menu" href="#ver-pantalla-10" aria-label="Volver al menú"></a>
+            <a class="enlace-mapa-del-nicho" href="#ver-pantalla-11" aria-label="Mapa del nicho"></a>
+            <a class="enlace-ir-al-menu-principal" href="#ver-pantalla-10" aria-label="Ir al menú principal"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 14: MURAL DE MEMORIAS -->
+    <section class="pantalla" id="pantalla-14">
+        <span id="ver-pantalla-14" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 14.png" alt="Mural de memorias">
+            <a class="enlace-volver-al-menu" href="#ver-pantalla-10" aria-label="Volver al menú"></a>
+            <a class="enlace-reportar-la-primera-dedicatoria" href="#ver-pantalla-15" aria-label="Reportar la primera dedicatoria"></a>
+            <a class="enlace-reportar-la-segunda-dedicatoria" href="#ver-pantalla-15" aria-label="Reportar la segunda dedicatoria"></a>
+            <a class="enlace-escribir-dedicatoria" href="#ver-pantalla-16" aria-label="Escribir dedicatoria"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 15: REPORTAR DEDICATORIA -->
+    <section class="pantalla" id="pantalla-15">
+        <span id="ver-pantalla-15" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 15.png" alt="Reportar dedicatoria">
+            <a class="enlace-cerrar-reporte" href="#ver-pantalla-14" aria-label="Cerrar reporte"></a>
+            <a class="enlace-enviar-reporte" href="#ver-pantalla-14" aria-label="Enviar reporte"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 16: ESCRIBIR DEDICATORIA -->
+    <section class="pantalla" id="pantalla-16">
+        <span id="ver-pantalla-16" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 16.png" alt="Escribir dedicatoria">
+            <a class="enlace-volver-al-mural" href="#ver-pantalla-14" aria-label="Volver al mural"></a>
+            <a class="enlace-publicar-dedicatoria" href="#ver-pantalla-17" aria-label="Publicar dedicatoria"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 17: MURAL CON LA DEDICATORIA PUBLICADA -->
+    <section class="pantalla" id="pantalla-17">
+        <span id="ver-pantalla-17" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 17.png" alt="Mural con la dedicatoria publicada">
+            <a class="enlace-volver-al-menu" href="#ver-pantalla-10" aria-label="Volver al menú"></a>
+            <a class="enlace-borrar-mi-dedicatoria" href="#ver-pantalla-18" aria-label="Borrar mi dedicatoria"></a>
+            <a class="enlace-escribir-otra-dedicatoria" href="#ver-pantalla-16" aria-label="Escribir otra dedicatoria"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 18: CONFIRMAR BORRADO DE DEDICATORIA -->
+    <section class="pantalla" id="pantalla-18">
+        <span id="ver-pantalla-18" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 18.png" alt="Confirmar borrado de dedicatoria">
+            <a class="enlace-borrar" href="#ver-pantalla-14" aria-label="Borrar"></a>
+            <a class="enlace-cancelar" href="#ver-pantalla-17" aria-label="Cancelar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 19: SOLICITUD DE SERVICIO -->
+    <section class="pantalla" id="pantalla-19">
+        <span id="ver-pantalla-19" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 19.png" alt="Solicitud de servicio">
+            <a class="enlace-volver-al-menu" href="#ver-pantalla-10" aria-label="Volver al menú"></a>
+            <a class="enlace-registrar-solicitud" href="#ver-pantalla-20" aria-label="Registrar solicitud"></a>
+            <a class="enlace-seguir-el-estado" href="#ver-pantalla-23" aria-label="Seguir el estado"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 20: DATOS DE LA SOLICITUD -->
+    <section class="pantalla" id="pantalla-20">
+        <span id="ver-pantalla-20" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 20.png" alt="Datos de la solicitud">
+            <a class="enlace-volver-a-servicios" href="#ver-pantalla-19" aria-label="Volver a servicios"></a>
+            <a class="enlace-continuar" href="#ver-pantalla-21" aria-label="Continuar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 21: TIPO DE SERVICIO -->
+    <section class="pantalla" id="pantalla-21">
+        <span id="ver-pantalla-21" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 21.png" alt="Tipo de servicio">
+            <a class="enlace-volver-a-los-datos" href="#ver-pantalla-20" aria-label="Volver a los datos"></a>
+            <a class="enlace-continuar" href="#ver-pantalla-22" aria-label="Continuar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 22: DESCRIPCIÓN DE LA SOLICITUD -->
+    <section class="pantalla" id="pantalla-22">
+        <span id="ver-pantalla-22" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 22.png" alt="Descripción de la solicitud">
+            <a class="enlace-volver-al-tipo-de-servicio" href="#ver-pantalla-21" aria-label="Volver al tipo de servicio"></a>
+            <a class="enlace-enviar-solicitud" href="#ver-pantalla-23" aria-label="Enviar solicitud"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 23: SEGUIMIENTO DE SOLICITUD -->
+    <section class="pantalla" id="pantalla-23">
+        <span id="ver-pantalla-23" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 23.png" alt="Seguimiento de solicitud">
+            <a class="enlace-volver-a-servicios" href="#ver-pantalla-19" aria-label="Volver a servicios"></a>
+            <a class="enlace-ir-al-menu-principal" href="#ver-pantalla-10" aria-label="Ir al menú principal"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 24: CONFIRMAR CIERRE DE SESIÓN FAMILIAR -->
+    <section class="pantalla" id="pantalla-24">
+        <span id="ver-pantalla-24" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 24.png" alt="Confirmar cierre de sesión familiar">
+            <a class="enlace-confirmar" href="#ver-pantalla-25" aria-label="Confirmar"></a>
+            <a class="enlace-cancelar" href="#ver-pantalla-10" aria-label="Cancelar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 25: SESIÓN FAMILIAR CERRADA -->
+    <section class="pantalla" id="pantalla-25">
+        <span id="ver-pantalla-25" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 25.png" alt="Sesión familiar cerrada">
+            <a class="enlace-volver-al-inicio" href="#ver-inicio" aria-label="Volver al inicio"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 26: INGRESO AL PANEL DEL PERSONAL -->
+    <section class="pantalla" id="pantalla-26">
+        <span id="ver-pantalla-26" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 26.png" alt="Ingreso al panel del personal">
+            <a class="enlace-olvide-mi-contrasena" href="#ver-pantalla-27" aria-label="Olvidé mi contraseña"></a>
+            <a class="enlace-ingresar" href="#ver-pantalla-29" aria-label="Ingresar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 27: RECUPERAR CONTRASEÑA -->
+    <section class="pantalla" id="pantalla-27">
+        <span id="ver-pantalla-27" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 27.png" alt="Recuperar contraseña">
+            <a class="enlace-volver" href="#ver-pantalla-26" aria-label="Volver"></a>
+            <a class="enlace-enviar-enlace" href="#ver-pantalla-28" aria-label="Enviar enlace"></a>
+            <a class="enlace-volver-a-iniciar-sesion" href="#ver-pantalla-26" aria-label="Volver a iniciar sesión"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 28: ENLACE DE RECUPERACIÓN ENVIADO -->
+    <section class="pantalla" id="pantalla-28">
+        <span id="ver-pantalla-28" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 28.png" alt="Enlace de recuperación enviado">
+            <a class="enlace-volver-a-iniciar-sesion" href="#ver-pantalla-26" aria-label="Volver a iniciar sesión"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 29: PANEL ADMINISTRATIVO -->
+    <section class="pantalla" id="pantalla-29">
+        <span id="ver-pantalla-29" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 29.png" alt="Panel administrativo">
+            <a class="enlace-volver-a-elegir-tipo-de-acceso" href="#ver-pantalla-4" aria-label="Volver a elegir tipo de acceso"></a>
+            <a class="enlace-registrar-difunto" href="#ver-pantalla-30" aria-label="Registrar difunto"></a>
+            <a class="enlace-asignar-ubicacion" href="#ver-pantalla-32" aria-label="Asignar ubicación"></a>
+            <a class="enlace-moderar-mural" href="#ver-pantalla-34" aria-label="Moderar mural"></a>
+            <a class="enlace-gestionar-solicitudes" href="#ver-pantalla-37" aria-label="Gestionar solicitudes"></a>
+            <a class="enlace-cerrar-sesion" href="#ver-pantalla-40" aria-label="Cerrar sesión"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 30: REGISTRAR DIFUNTO -->
+    <section class="pantalla" id="pantalla-30">
+        <span id="ver-pantalla-30" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 30.png" alt="Registrar difunto">
+            <a class="enlace-volver-al-panel" href="#ver-pantalla-29" aria-label="Volver al panel"></a>
+            <a class="enlace-guardar-y-continuar" href="#ver-pantalla-31" aria-label="Guardar y continuar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 31: REGISTRO GUARDADO -->
+    <section class="pantalla" id="pantalla-31">
+        <span id="ver-pantalla-31" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 31.png" alt="Registro guardado">
+            <a class="enlace-volver-al-panel" href="#ver-pantalla-29" aria-label="Volver al panel"></a>
+            <a class="enlace-registrar-otro-difunto" href="#ver-pantalla-30" aria-label="Registrar otro difunto"></a>
+            <a class="enlace-ir-al-menu-principal" href="#ver-pantalla-29" aria-label="Ir al menú principal"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 32: ASIGNAR UBICACIÓN -->
+    <section class="pantalla" id="pantalla-32">
+        <span id="ver-pantalla-32" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 32.png" alt="Asignar ubicación">
+            <a class="enlace-volver-al-panel" href="#ver-pantalla-29" aria-label="Volver al panel"></a>
+            <a class="enlace-guardar-ubicacion" href="#ver-pantalla-33" aria-label="Guardar ubicación"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 33: UBICACIÓN ASIGNADA -->
+    <section class="pantalla" id="pantalla-33">
+        <span id="ver-pantalla-33" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 33.png" alt="Ubicación asignada">
+            <a class="enlace-ir-al-menu-principal" href="#ver-pantalla-29" aria-label="Ir al menú principal"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 34: MODERAR MURAL -->
+    <section class="pantalla" id="pantalla-34">
+        <span id="ver-pantalla-34" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 34.png" alt="Moderar mural">
+            <a class="enlace-volver-al-panel" href="#ver-pantalla-29" aria-label="Volver al panel"></a>
+            <a class="enlace-borrar-la-dedicatoria-de-pedro-gil" href="#ver-pantalla-35" aria-label="Borrar la dedicatoria de Pedro Gil"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 35: CONFIRMAR BORRADO DE MENSAJE REPORTADO -->
+    <section class="pantalla" id="pantalla-35">
+        <span id="ver-pantalla-35" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 35.png" alt="Confirmar borrado de mensaje reportado">
+            <a class="enlace-borrar" href="#ver-pantalla-36" aria-label="Borrar"></a>
+            <a class="enlace-cancelar" href="#ver-pantalla-34" aria-label="Cancelar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 36: MURAL MODERADO -->
+    <section class="pantalla" id="pantalla-36">
+        <span id="ver-pantalla-36" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 36.png" alt="Mural moderado">
+            <a class="enlace-volver-al-panel" href="#ver-pantalla-29" aria-label="Volver al panel"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 37: SOLICITUDES ADMINISTRATIVAS -->
+    <section class="pantalla" id="pantalla-37">
+        <span id="ver-pantalla-37" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 37.png" alt="Solicitudes administrativas">
+            <a class="enlace-volver-al-panel" href="#ver-pantalla-29" aria-label="Volver al panel"></a>
+            <a class="enlace-opciones-de-la-solicitud-002" href="#ver-pantalla-38" aria-label="Opciones de la solicitud 002"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 38: OPCIONES DE LA SOLICITUD 002 -->
+    <section class="pantalla" id="pantalla-38">
+        <span id="ver-pantalla-38" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 38.png" alt="Opciones de la solicitud 002">
+            <a class="enlace-cerrar-opciones" href="#ver-pantalla-37" aria-label="Cerrar opciones"></a>
+            <a class="enlace-priorizar" href="#ver-pantalla-39" aria-label="Priorizar"></a>
+            <a class="enlace-mantener" href="#ver-pantalla-37" aria-label="Mantener"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 39: SOLICITUD PRIORIZADA -->
+    <section class="pantalla" id="pantalla-39">
+        <span id="ver-pantalla-39" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 39.png" alt="Solicitud priorizada">
+            <a class="enlace-aceptar" href="#ver-pantalla-42" aria-label="Aceptar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 40: CONFIRMAR CIERRE DE SESIÓN ADMINISTRATIVA -->
+    <section class="pantalla" id="pantalla-40">
+        <span id="ver-pantalla-40" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 40.png" alt="Confirmar cierre de sesión administrativa">
+            <a class="enlace-confirmar" href="#ver-pantalla-41" aria-label="Confirmar"></a>
+            <a class="enlace-cancelar" href="#ver-pantalla-29" aria-label="Cancelar"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 41: SESIÓN ADMINISTRATIVA CERRADA -->
+    <section class="pantalla" id="pantalla-41">
+        <span id="ver-pantalla-41" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 41.png" alt="Sesión administrativa cerrada">
+            <a class="enlace-volver-al-inicio" href="#ver-inicio" aria-label="Volver al inicio"></a>
+        </div>
+    </section>
+
+    <!-- PANTALLA 42: SOLICITUDES CON PRIORIDAD ACTUALIZADA -->
+    <section class="pantalla" id="pantalla-42">
+        <span id="ver-pantalla-42" hidden></span>
+        <div class="pantalla-imagen">
+            <img src="imagenes/Group 42.png" alt="Solicitudes con la solicitud 002 marcada como De inmediato">
+            <a class="enlace-volver-al-panel-administrativo" href="#ver-pantalla-29" aria-label="Volver al panel administrativo"></a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
